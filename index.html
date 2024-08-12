@@ -1,0 +1,595 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Konfirmasi Kehadiran Clash OF Cadre LDK Al-Fath 2024</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        .whitespace-pre-line {
+            white-space: pre-line;
+        }
+
+        body {
+            background-image: url("./bg\ form.png");
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: repeat;
+            background-size: auto;
+
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        .bg-paper {
+            /* bacmround with image, and repeat */
+
+            background-image: url('./bg.png');
+            background-repeat: repeat;
+            background-size: cover;
+            ;
+
+        }
+
+        .dark-mode-tambahan {
+            background-blend-mode: soft-light;
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container px-xl-5">
+        <div class="mx-xl-5">
+
+            <div class="card mb-3   " style="background: none;">
+
+                <button style="border: 0cap; background: none;" onclick="changeTheme()"> <img
+                        class="card-img-top rounded" src="./LOGO + SPESIAL HARI KEMERDEKAAN.png" style="height: 200px; object-fit: scale-down;" alt=""> </button>
+
+            </div>
+
+
+            <form id="formulir" class="mb-3  needs-validation" novalidate>
+
+                <div class="card mb-3  bg-paper  ">
+                    <div class="d-flex justify-content-around align-items-center">
+                        <img class="card-img-top d-block " alt="">
+
+                        <!-- <img class="card-img-top d-block " src="LOGO WARNA.png"  style="width: 50px; height: auto;" alt="">
+                <img class="card-img-top d-block " src="Rinai Hamaika.png"  style="width: 40px; height: auto;" alt=""> -->
+                    </div>
+                    <!--  -->
+                    <div class="card-header">
+                        <h1 class="text-center"> <b> 🔶Konfirmasi Kehadiran <br> Clash Of Cadre: Day 1 🔶</b></h1>
+
+                    </div>
+                    <div class="card-body m-sm-3">
+                        <p class="whitespace-pre-line ">
+                            Assalamu'alaikum semuannya
+                            gimana nih kabarnnya?
+                            Semoga sehat selalu ya
+                            Alhamdulillah, kita sudah memasuki bulan Agustus, aku ga tau mau nulis apa lagi, intinya
+
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos soluta cupiditate
+                            necessitatibus veniam, pariatur porro? Nobis porro sequi harum ipsa debitis ab vitae
+                            repellendus. Totam sit explicabo magnam exercitationem possimus.
+                            {diisi bc an}
+
+                        </p>
+
+
+
+
+                    </div>
+                    <div class="card-footer text-body-secondary">
+                        <p class="text-danger">
+
+                            * Jangan masukan data sensitif seperti password ke dalam formulir ini
+                        </p>
+                    </div>
+                </div> <!-- card -->
+
+                <!--Boostrapt Card -->
+                <div class="card mb-3 p-sm-3 bg-paper">
+                    <div class="card-body">
+                        <label class="form-label mb-3" for="status">
+                            <h5 class="fw-semibold">Status</h5>
+                        </label>
+                        <br>
+                        <div class="btn-group " role="group">
+                            <select onchange="pilihStatus()" class="form-select" id="status" name="status" required>
+                                <option value="">Silahkan Isi...</option>
+                                <option  value="Kader Aktif">Pengurus Aktif LDK Al-Fath 2024</option>
+                                <option  value="MSP">MSP</option>
+                                <option  value="MSF">MSF</option>
+                                <option  value="Pure Alumni">Pure Alumni</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+               
+
+
+
+                <div class="card mb-3 p-sm-3 bg-paper">
+                    <div class="card-body">
+                        <label class="form-label mb-3" for="nama">
+                            <h5 id="pengisian-nama" class="fw-semibold">Nama</h5>
+                        </label>
+                        <input type="text" name="nama" id="nama" required placeholder="Masukan Jawaban Kamu"
+                            class="form-control" aria-describedby="Masukan data dengan benar">
+                    </div>
+                </div>
+                <div class="card mb-3 p-sm-3 bg-paper">
+                    <div class="card-body">
+                        <label class="form-label mb-3" for="nim">
+                            <h5 class="fw-semibold">NIM</h5>
+                        </label>
+                        <input type="number" name="nim" id="nim" required placeholder="Masukan Jawaban Kamu"
+                            class="form-control" aria-describedby="Masukan data dengan benar">
+                    </div>
+                </div>
+                <div class="card mb-3 p-sm-3 bg-paper">
+                    <div class="card-body">
+                        <label class="form-label mb-3" for="jurusan">
+                            <h5 class="fw-semibold">Program Studi</h5>
+                        </label>
+                        <input type="text" name="jurusan" id="jurusan" required placeholder="Masukan Jawaban Kamu"
+                            class="form-control" aria-describedby="Masukan data dengan benar">
+                    </div>
+                </div>
+                <div class="card mb-3 p-sm-3 bg-paper">
+                    <div class="card-body">
+                        <label class="form-label
+                        mb-3" for="angkatan">
+                            <h5 class="fw-semibold">Angkatan</h5>
+                        </label>
+                        <input type="number" name="angkatan" id="angkatan" required placeholder="Masukan Jawaban Kamu"
+                            class="form-control" aria-describedby="Masukan data dengan benar">
+                    </div>
+                </div>
+                <div class="card mb-3 p-sm-3 bg-paper">
+                    <div class="card-body">
+                        <label class="form-label mb-3" for="fakultas">
+                            <h5 class="fw-semibold">Fakultas</h5>
+                        </label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="fakultas-FIF" name="fakultas" value="FIF"
+                                required>
+                            <label class="form-check-label" for="fakultas-FIF">FIF</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="fakultas-FRI" name="fakultas" value="FRI"
+                                required>
+                            <label class="form-check-label" for="fakultas-FRI">FRI</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="fakultas-FIK" name="fakultas" value="FIK"
+                                required>
+                            <label class="form-check-label" for="fakultas-FIK">FIK</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="fakultas-FTE" name="fakultas" value="FTE"
+                                required>
+                            <label class="form-check-label" for="fakultas-FTE">FTE</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="fakultas-FKB" name="fakultas" value="FKB"
+                                required>
+                            <label class="form-check-label" for="fakultas-FKB">FKB/FKS</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="fakultas-FEB" name="fakultas" value="FEB"
+                                required>
+                            <label class="form-check-label" for="fakultas-FEB">FEB</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="fakultas-FIT" name="fakultas" value="FIT"
+                                required>
+                            <label class="form-check-label" for="fakultas-FIT">FIT</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 p-sm-3 bg-paper">
+                    <div class="card-body">
+                        <label class="form-label mb-3" for="jenis_kelamin">
+                            <h5 class="fw-semibold">Jenis Kelamin</h5>
+                        </label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="laki-laki" name="jenis_kelamin" value="Laki-laki"
+                                required>
+                            <label class="form-check-label" for="laki-laki">Laki-laki</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan"
+                                required>
+                            <label class="form-check-label" for="perempuan">Perempuan</label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card mb-3 p-sm-3 bg-paper">
+                    <div class="card-body">
+                        <label class="form-label mb-3" for="kehadiran">
+                            <h5 class="fw-semibold">Konfirmasi Kehadiran</h5>
+                        </label>
+                        <p class="whitespace-pre-line">Tanggal Kegiatan: Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto consequatur a beatae at laborum aperiam consequuntur culpa non aut repellat sit officiis facere, obcaecati nemo voluptates. Ipsa explicabo repellendus molestiae!</p>
+                        <div class="form-check">
+                            <input class="form-check-input" onclick="konfirmasiKehadiran();" type="radio" id="konfirmasi_hadir_full" name="kehadiran" value="Full Hadir"
+                                required>
+                            <label class="form-check-label" for="konfirmasi_hadir_full">Insya Allah Bisa hadir di kedua hari tersebut</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" onclick="konfirmasiKehadiran();" type="radio" id="konfirmasi_hadir_17" name="kehadiran" value="Hari Pertama saja"
+                                required>
+                            <label class="form-check-label" for="konfirmasi_hadir_17">Insya Allah hadir, tetapi hanya di tanggal 17</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" onclick="konfirmasiKehadiran();" type="radio" id="konfirmasi_hadir_18" name="kehadiran" value="Hari Kedua saja"
+                                required>
+                            <label class="form-check-label" for="konfirmasi_hadir_18">Insya Allah hadir, tetapi hanya di tanggal 18</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" onclick="konfirmasiKehadiran();" type="radio" id="konfirmasi_izin" name="kehadiran" value="Full Izin"
+                                required>
+                            <label class="form-check-label" for="konfirmasi_izin">Afwan belum bisa hadir sama sekali</label>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="card mb-3 p-sm-3 bg-paper" id="card-perizinan">
+                    <div class="card-body">
+                        <label class="form-label mb-1" for="perizinan_peserta">
+                            <h5 class="fw-semibold">Alasan Izin </h5>
+                        </label>
+                        <p class="whitespace-pre-line">
+                            Tuliskan alasan kamu tidak bisa hadir. isi "-" jika Insya Allah hadir
+                        </p>
+                        <input type="text" name="perizinan_peserta" id="perizinan_peserta" required
+                            placeholder="Masukan Jawaban Kamu" class="form-control"
+                            aria-describedby="Masukan data dengan benar">
+                    </div>
+                </div>
+                
+                <input type="hidden" id="latitude" name="latitude">
+                <input type="hidden" id="longitude" name="longitude">
+                <div class="card mb-3 p-sm-3 bg-paper">
+                    <div class="card-body  ">
+
+                        <button type="submit" class="btn btn-outline-primary mb-sm-3">Submit</button>
+
+                        <p id="pesan" class="text-muted ">Ucapkan Basmallah sebelum kelakukan submit</p>
+                    </div>
+                </div>
+
+            </form>
+
+
+            <footer class="card mb-3 bg-paper">
+                <div class="card-footer   text-muted">
+                    <div class="row justify-content-evenly mt-4">
+                        <div class="col-md-5 ">
+                            <p><strong>Waktu Sekarang:</strong> <span id="current-time"></span></p>
+                        </div>
+
+                        <div class="col-md-5">
+                            <p><strong>Deadline:</strong> <span id="deadline"></span></p>
+                        </div>
+                    </div>
+                    <div class="text-center ">
+                        <p><strong>Lokasi:</strong> <span id="current-location"></span></p>
+                    </div>
+                    <p class="text-center">🔶 Konfirmasi Kehadiran Clash OF Cadre LDK Al-Fath 2024 🔶</p>
+                    <h5 class="text-muted text-center "> <a href="https://www.instagram.com/alfathtelu/"> LDK Al-Fath
+                            Telkom
+                            University Gen 11</a></h5>
+
+
+                    <p class="text-muted text-center  opacity-25"> <a
+                            href="https://chat.whatsapp.com/JG8CV0Q5I7yGzONuZT40Pg"><i class="bi bi-code-slash"></i></a>
+                    </p>
+                </div>
+
+
+            </footer>
+            <!-- create a success card -->
+        </div>
+
+    </div> <!-- container -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+        <script src="./INFONIM.js"></script>
+    <script>
+        console.log(INFONIM)
+        const deadline = new Date("2024-08-16T22:20:00+07:00");
+
+        const formulir = document.getElementById('formulir');
+        setInterval(updateCurrentTime, 1000);
+
+        function setDeadline(deadlineDate) {
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', timeZoneName: 'short' };
+            document.getElementById('deadline').textContent = deadlineDate.toLocaleString('id-ID', options);
+
+
+        }
+        function updateCurrentTime() {
+
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', timeZoneName: 'short' };
+            const currentTime = new Date().toLocaleString('id-ID', options);
+            if (new Date() - deadline > 0) {
+                hasDeadline()
+            }
+
+            document.getElementById('current-time').textContent = currentTime;
+        }
+
+
+        function updateLocation() {
+
+            if (navigator.geolocation) {
+                console.log("coba" + navigator.geolocation);
+                navigator.geolocation.getCurrentPosition((position) => {
+                    const { latitude, longitude } = position.coords;
+                    document.getElementById('current-location').textContent = `${latitude.toFixed(6)}, ${longitude.toFixed(6)}`;
+                    document.getElementById('latitude').value = latitude;
+                    document.getElementById('longitude').value = longitude;
+                }, (error) => {
+                    console.info('Error:', error);
+                    document.getElementById('current-location').textContent = 'Not available'
+                });
+            } else {
+                document.getElementById('current-location').textContent = 'Not supported';
+            }
+        }
+        // Load cached data
+        window.addEventListener('load', () => {
+            if (document.documentElement.getAttribute('data-bs-theme') == 'dark' || localStorage.getItem('dark-mode') == 'true' || localStorage.getItem('theme') == 'dark') {
+                document.querySelectorAll('.bg-paper').forEach((element) => {
+                    element.classList.add('dark-mode-tambahan');
+                });
+            }
+            setDeadline(deadline);
+            updateLocation();
+
+            const cachedData = localStorage.getItem('formData');
+            console.log(cachedData);
+            if (cachedData) {
+                const data = JSON.parse(cachedData);
+                Object.entries(data).forEach(([key, value]) => {
+                    const element = formulir.elements[key];
+                    if (element) {
+                        if (element.type === 'checkbox') {
+                            element.checked = value.includes(element.value);
+                        } else if (element.type === 'radio') {
+                            element.checked = (element.value === value);
+                        } else if (element.type !== 'file') {
+                            element.value = value;
+                        }
+                    }
+                });
+            }
+        });
+        formulir.addEventListener('submit', async (event) => {
+            event.preventDefault();
+            if (formulir.checkValidity()) {
+                changeSubmitToLoading();
+                bePatient();
+                const formData = new FormData(formulir);
+                const data = Object.fromEntries(formData);
+                localStorage.setItem('formData', JSON.stringify(data));
+                data.interests = formData.getAll('interests');
+                const { row } = await sendToSpreadsheet(data);
+                if (row) {
+                    showSuccessSendForm(row, data.jenis_kelamin, data.nama);
+
+                } else {
+                    alert('Gagal mengirimkan formulir');
+                    location.reload(true);
+
+
+                }
+            } else {
+
+                formulir.classList.add('was-validated');
+
+            }
+        });
+        function changeSubmitToLoading() {
+            const submitButton = document.querySelector('button[type="submit"]');
+            submitButton.disabled = true;
+            submitButton.classList.add('disabled');
+            submitButton.className = 'btn mb-sm-3 btn-primary loading-button';
+            submitButton.innerHTML =
+                `
+  <span class="spinner-grow spinner-grow-sm" aria-hidden="true"></span>
+  <span role="status">Tunggu Yaa...</span>
+        `;
+
+        }
+        function bePatient() {
+            document.getElementById('pesan').textContent = '“Dan bersabarlah! Sesungguhnya Allah beserta orang-orang yang sabar.” (QS. Al-Anfal:46)';
+        }
+
+        function showSuccessSendForm(lastrow, jenis_kelamin, nama) {
+            const sapaan = jenis_kelamin === 'Laki-laki' ? 'Akhi' : 'Ukhti';
+
+            console.log(jenis_kelamin);
+            formulir.innerHTML =
+                `
+        <div class="card mb-3 p-sm-3 bg-paper">
+                            <div class="card-body">
+
+            <div class="text-center">
+                <h1 class="display-4 text-success">Alhamdulillah</h1>
+                <p class="lead">Data nya ${sapaan} ${nama} berhasil tersimpan pada baris ke - ${lastrow}</p>
+                <div class="mt-4">
+ <a class="btn btn-danger" onclick="tutupWindow()">Tutup</a>
+                    <!-- Optional: Add more buttons or links as needed -->
+                </div>
+            </div>
+            </div>
+        </div>
+        `
+        }
+        function tutupWindow() {
+            try{
+                
+                return  window.close();
+            } catch(e){
+                alert("Maaf, ada  kesalahan saat menutup window\n" + e.message);
+            }
+        }
+        function hasDeadline() {
+            formulir.innerHTML =
+                `
+        <div class="card mb-3 p-sm-3 bg-paper">
+                            <div class="card-body">
+
+            <div class="text-center">
+                <h1 class="display-4 text-danger">Waktu Habis</h1>
+                <p class="lead">Maaf, waktu pengisian formulir ini sudah habis</p>
+                <div class="mt-4">
+ <a class="btn btn-danger" onclick="window.close()">Tutup</a>
+                    <!-- Optional: Add more buttons or links as needed -->
+                </div>
+            </div>
+            </div>
+        </div>
+        `
+        }
+        async function sendToSpreadsheet(data) {
+            try {
+                const response = await fetch('https://script.google.com/macros/s/AKfycbyTlFSsdA3YNHgyv6-gPCk2VUbYrZPOZZ7Zk27mktZkJFlIYkuNM4HGpzvAGvjQqynchA/exec?query=konfirmasikehadiran', {
+
+                    method: 'POST',
+                    redirect: 'follow',
+
+                    headers: {
+                        'Content-Type': 'text/plain'
+
+                    },
+
+                    body: JSON.stringify(data),
+                });
+                console.log("aaw")
+                if (response.ok) {
+                    const result = await response.json();
+                    localStorage.setItem('formData', JSON.stringify(data));
+                    return result;
+
+
+                } else {
+                    throw new Error('Form submission failed');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+            } finally {
+            }
+        }
+
+        function changeTheme() {
+            const theme = document.documentElement.getAttribute('data-bs-theme');
+            if (theme === 'dark') {
+                document.documentElement.setAttribute('data-bs-theme', 'light');
+
+            } else {
+                document.querySelectorAll('.bg-paper').forEach((element) => {
+                    element.classList.add('dark-mode-tambahan');
+                });
+                document.documentElement.setAttribute('data-bs-theme', 'dark');
+            }
+        }
+        const nimInput = document.getElementById('nim');
+        nimInput.addEventListener('input', (event) => {
+            if(nimInput.value.length == 10){
+                const nim = INFONIM.find(info => info["NIM LAMA"] === nimInput.value.substring(0,4));
+                if (nim) {
+                    document.getElementById('jurusan').value = nim.JURUSAN;
+                    document.getElementById('fakultas-' + nim.FAKULTAS).checked = true;
+                    document.getElementById('angkatan').value ="20" + nimInput.value.substring(4, 6);
+                } else {
+                    document.getElementById('jurusan').value = '';
+                    document.getElementById('fakultas-FIF').checked = false;
+                    document.getElementById('fakultas-FRI').checked = false;
+                    document.getElementById('fakultas-FIK').checked = false;
+                    document.getElementById('fakultas-FTE').checked = false;
+                    document.getElementById('fakultas-FKB').checked = false;
+                    document.getElementById('fakultas-FEB').checked = false;
+                    document.getElementById('fakultas-FIT').checked = false;
+                }
+            }
+            else if(nimInput.value.length == 12){
+                const nim = INFONIM.find(info => info["NIM BARU"] === nimInput.value.substring(0,5));
+                if (nim) {
+                    document.getElementById('jurusan').value = nim.JURUSAN;
+                    document.getElementById('fakultas-' + nim.FAKULTAS).checked = true;
+                    document.getElementById('angkatan').value ="20" + nimInput.value.substring(5, 7);
+                } else {
+                    document.getElementById('jurusan').value = '';
+                    document.getElementById('fakultas-FIF').checked = false;
+                    document.getElementById('fakultas-FRI').checked = false;
+                    document.getElementById('fakultas-FIK').checked = false;
+                    document.getElementById('fakultas-FTE').checked = false;
+                    document.getElementById('fakultas-FKB').checked = false;
+                    document.getElementById('fakultas-FEB').checked = false;
+                    document.getElementById('fakultas-FIT').checked = false;
+                }
+            }
+        });
+
+        function konfirmasiKehadiran(){
+            
+            const konfirmasi_izin = document.getElementById('konfirmasi_izin');
+            const konfirmasi_hadir_full = document.getElementById('konfirmasi_hadir_full');
+            const konfirmasi_hadir_17 = document.getElementById('konfirmasi_hadir_17');
+            const konfirmasi_hadir_18 = document.getElementById('konfirmasi_hadir_18');
+            const perizinan_peserta = document.getElementById('perizinan_peserta');
+            const card_perizinan = document.getElementById('card-perizinan');
+            card_perizinan.style.transition = "all 2s";
+            if(konfirmasi_izin.checked || konfirmasi_hadir_17.checked || konfirmasi_hadir_18.checked){
+                card_perizinan.hidden = false;
+                perizinan_peserta.value = "";
+            } else {
+                perizinan_peserta.value = "-";
+                card_perizinan.hidden = true;
+            }
+        }
+        function pilihStatus() {
+            const status = document.getElementById('status').value;
+            console.log(status);
+            switch (status) {
+                case "Kader Aktif":
+                    document.getElementById('pengisian-nama').textContent = "Nama Panggilan";
+                    
+                    break;
+                
+            
+                default:
+                document.getElementById('pengisian-nama').textContent = "Nama Lengkap";
+
+                    break;
+            }
+            
+            
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>
