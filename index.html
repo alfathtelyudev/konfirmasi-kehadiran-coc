@@ -100,28 +100,30 @@
                 <!--Boostrapt Card -->
                 <div class="card mb-3 p-sm-3 bg-paper">
                     <div class="card-body">
-                        <label class="form-label mb-3" for="jenis_kelamin">
-                            <h5 class="fw-semibold">Jenis Kelamin</h5>
+                        <label class="form-label mb-3" for="status">
+                            <h5 class="fw-semibold">Status</h5>
                         </label>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" id="laki-laki" name="jenis_kelamin" value="Laki-laki"
-                                required>
-                            <label class="form-check-label" for="laki-laki">Laki-laki</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan"
-                                required>
-                            <label class="form-check-label" for="perempuan">Perempuan</label>
+                        <br>
+                        <div class="btn-group " role="group">
+                            <select onchange="pilihStatus()" class="form-select" id="status" name="status" required>
+                                <option value="">Silahkan Isi...</option>
+                                <option  value="Kader Aktif">Pengurus Aktif LDK Al-Fath 2024</option>
+                                <option  value="MSP">MSP</option>
+                                <option  value="MSF">MSF</option>
+                                <option  value="Pure Alumni">Pure Alumni</option>
+                            </select>
                         </div>
                     </div>
                 </div>
+
+               
 
 
 
                 <div class="card mb-3 p-sm-3 bg-paper">
                     <div class="card-body">
                         <label class="form-label mb-3" for="nama">
-                            <h5 class="fw-semibold">Nama</h5>
+                            <h5 id="pengisian-nama" class="fw-semibold">Nama</h5>
                         </label>
                         <input type="text" name="nama" id="nama" required placeholder="Masukan Jawaban Kamu"
                             class="form-control" aria-describedby="Masukan data dengan benar">
@@ -197,7 +199,23 @@
                         </div>
                     </div>
                 </div>
-
+                <div class="card mb-3 p-sm-3 bg-paper">
+                    <div class="card-body">
+                        <label class="form-label mb-3" for="jenis_kelamin">
+                            <h5 class="fw-semibold">Jenis Kelamin</h5>
+                        </label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="laki-laki" name="jenis_kelamin" value="Laki-laki"
+                                required>
+                            <label class="form-check-label" for="laki-laki">Laki-laki</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan"
+                                required>
+                            <label class="form-check-label" for="perempuan">Perempuan</label>
+                        </div>
+                    </div>
+                </div>
 
 
                 <div class="card mb-3 p-sm-3 bg-paper">
@@ -205,15 +223,26 @@
                         <label class="form-label mb-3" for="kehadiran">
                             <h5 class="fw-semibold">Konfirmasi Kehadiran</h5>
                         </label>
+                        <p class="whitespace-pre-line">Tanggal Kegiatan: Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto consequatur a beatae at laborum aperiam consequuntur culpa non aut repellat sit officiis facere, obcaecati nemo voluptates. Ipsa explicabo repellendus molestiae!</p>
                         <div class="form-check">
-                            <input class="form-check-input" onclick="konfirmasiKehadiran();" type="radio" id="konfirmasi_hadir" name="kehadiran" value="Rencana Hadir"
+                            <input class="form-check-input" onclick="konfirmasiKehadiran();" type="radio" id="konfirmasi_hadir_full" name="kehadiran" value="Full Hadir"
                                 required>
-                            <label class="form-check-label" for="konfirmasi_hadir">Insya Allah hadir</label>
+                            <label class="form-check-label" for="konfirmasi_hadir_full">Insya Allah Bisa hadir di kedua hari tersebut</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" onclick="konfirmasiKehadiran();" type="radio" id="konfirmasi_izin" name="kehadiran" value="Izin"
+                            <input class="form-check-input" onclick="konfirmasiKehadiran();" type="radio" id="konfirmasi_hadir_17" name="kehadiran" value="Hari Pertama saja"
                                 required>
-                            <label class="form-check-label" for="konfirmasi_izin">Afwan belum bisa hadir</label>
+                            <label class="form-check-label" for="konfirmasi_hadir_17">Insya Allah hadir, tetapi hanya di tanggal 17</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" onclick="konfirmasiKehadiran();" type="radio" id="konfirmasi_hadir_18" name="kehadiran" value="Hari Kedua saja"
+                                required>
+                            <label class="form-check-label" for="konfirmasi_hadir_18">Insya Allah hadir, tetapi hanya di tanggal 18</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" onclick="konfirmasiKehadiran();" type="radio" id="konfirmasi_izin" name="kehadiran" value="Full Izin"
+                                required>
+                            <label class="form-check-label" for="konfirmasi_izin">Afwan belum bisa hadir sama sekali</label>
                         </div>
                     </div>
                 </div>
@@ -285,7 +314,7 @@
         <script src="./INFONIM.js"></script>
     <script>
         console.log(INFONIM)
-        const deadline = new Date("2024-11-30T22:20:00+07:00");
+        const deadline = new Date("2024-08-16T22:20:00+07:00");
 
         const formulir = document.getElementById('formulir');
         setInterval(updateCurrentTime, 1000);
@@ -407,13 +436,21 @@
                 <h1 class="display-4 text-success">Alhamdulillah</h1>
                 <p class="lead">Data nya ${sapaan} ${nama} berhasil tersimpan pada baris ke - ${lastrow}</p>
                 <div class="mt-4">
- <a class="btn btn-danger" onclick="window.close()">Tutup</a>
+ <a class="btn btn-danger" onclick="tutupWindow()">Tutup</a>
                     <!-- Optional: Add more buttons or links as needed -->
                 </div>
             </div>
             </div>
         </div>
         `
+        }
+        function tutupWindow() {
+            try{
+                
+                return  window.close();
+            } catch(e){
+                alert("Maaf, ada  kesalahan saat menutup window\n" + e.message);
+            }
         }
         function hasDeadline() {
             formulir.innerHTML =
@@ -451,7 +488,6 @@
                 if (response.ok) {
                     const result = await response.json();
                     localStorage.setItem('formData', JSON.stringify(data));
-                    console.info(result)
                     return result;
 
 
@@ -515,19 +551,39 @@
         });
 
         function konfirmasiKehadiran(){
-            const konfirmasi_hadir = document.getElementById('konfirmasi_hadir');
+            
             const konfirmasi_izin = document.getElementById('konfirmasi_izin');
+            const konfirmasi_hadir_full = document.getElementById('konfirmasi_hadir_full');
+            const konfirmasi_hadir_17 = document.getElementById('konfirmasi_hadir_17');
+            const konfirmasi_hadir_18 = document.getElementById('konfirmasi_hadir_18');
             const perizinan_peserta = document.getElementById('perizinan_peserta');
             const card_perizinan = document.getElementById('card-perizinan');
             card_perizinan.style.transition = "all 2s";
-            console.log(konfirmasi_hadir.checked);
-            if(konfirmasi_izin.checked){
+            if(konfirmasi_izin.checked || konfirmasi_hadir_17.checked || konfirmasi_hadir_18.checked){
                 card_perizinan.hidden = false;
                 perizinan_peserta.value = "";
             } else {
                 perizinan_peserta.value = "-";
                 card_perizinan.hidden = true;
             }
+        }
+        function pilihStatus() {
+            const status = document.getElementById('status').value;
+            console.log(status);
+            switch (status) {
+                case "Kader Aktif":
+                    document.getElementById('pengisian-nama').textContent = "Nama Panggilan";
+                    
+                    break;
+                
+            
+                default:
+                document.getElementById('pengisian-nama').textContent = "Nama Lengkap";
+
+                    break;
+            }
+            
+            
         }
 
 
