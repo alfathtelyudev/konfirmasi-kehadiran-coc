@@ -32,15 +32,17 @@
             background-image: url('./bg.png');
             background-repeat: repeat;
             background-size: cover;
-            transition: width 1s ease 0.5s; /* 0.5s delay before transition starts */
+            transition: width 1s ease 0.5s;
+            /* 0.5s delay before transition starts */
 
         }
+
         .bg-paper:hover {
             /* bacmround with image, and repeat */
 
             background-image: url('./bg.png');
             background-repeat: repeat;
-            background-size:contain;
+            background-size: contain;
             box-shadow: 5px 5px 5px 5px rgba(186, 44, 44, 0.25);
         }
 
@@ -60,7 +62,8 @@
             <div class="card mb-3   " style="background: none;">
 
                 <button style="border: 0cap; background: none;" onclick="changeTheme()"> <img
-                        class="card-img-top rounded" src="./LOGO + SPESIAL HARI KEMERDEKAAN.png" style="height: 200px; object-fit: scale-down;" alt=""> </button>
+                        class="card-img-top rounded" src="./LOGO + SPESIAL HARI KEMERDEKAAN.png"
+                        style="height: 200px; object-fit: scale-down;" alt=""> </button>
 
             </div>
 
@@ -80,13 +83,14 @@
 
                     </div>
                     <div class="card-body m-sm-3">
-                        Clash of Cadre : Spesial Kemerdekaan Indonesia 
+                        Clash of Cadre : Spesial Kemerdekaan Indonesia
                         <p class="whitespace-pre-line ">
 
                             Assalamualaikum, Halo Sahabat Al-Fath! 👋🏻
-                            
-                            Merdeka! Merdeka! Merdeka!  
-                            Dalam semangat kemerdekaan yang berkobar, Al-Fath Gen 11 dengan bangga mengundang kalian semua untuk hadir di acara Gathering 3 Kader & Peringatan Kemerdekaan Indonesia! 🎉
+
+                            Merdeka! Merdeka! Merdeka!
+                            Dalam semangat kemerdekaan yang berkobar, Al-Fath Gen 11 dengan bangga mengundang kalian
+                            semua untuk hadir di acara Gathering 3 Kader & Peringatan Kemerdekaan Indonesia! 🎉
                             # Day 1
                             📅 Tanggal: Sabtu, 17 Agustus 2024
                             ⏰ Waktu: 08.00 - 10.00 WIB
@@ -94,9 +98,10 @@
                             📅 Tanggal: Minggu, 18 Agustus 2024
                             ⏰ Waktu: 08.00 - 12.00 WIB
 
-                            
-                            Jangan sampai ketinggalan momen seru ini! Yuk, kita tunjukkan semangat nasionalisme kita dengan penuh rasa syukur dan kebersamaan! 🥳
-                            
+
+                            Jangan sampai ketinggalan momen seru ini! Yuk, kita tunjukkan semangat nasionalisme kita
+                            dengan penuh rasa syukur dan kebersamaan! 🥳
+
                         </p>
 
 
@@ -121,16 +126,16 @@
                         <div class="btn-group " role="group">
                             <select onchange="pilihStatus()" class="form-select" id="status" name="status" required>
                                 <option value="">Silahkan Isi...</option>
-                                <option  value="Kader Aktif">Pengurus Aktif LDK Al-Fath 2024</option>
-                                <option  value="MSP">MSP</option>
-                                <option  value="MSF">MSF</option>
-                                <option  value="Pure Alumni">Pure Alumni</option>
+                                <option value="Kader Aktif">Pengurus Aktif LDK Al-Fath 2024</option>
+                                <option value="MSP">MSP</option>
+                                <option value="MSF">MSF</option>
+                                <option value="Pure Alumni">Pure Alumni</option>
                             </select>
                         </div>
                     </div>
                 </div>
 
-               
+
 
 
 
@@ -219,13 +224,13 @@
                             <h5 class="fw-semibold">Jenis Kelamin</h5>
                         </label>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" id="laki-laki" name="jenis_kelamin" value="Laki-laki"
-                                required>
+                            <input class="form-check-input" type="radio" id="laki-laki" name="jenis_kelamin"
+                                value="Laki-laki" required>
                             <label class="form-check-label" for="laki-laki">Laki-laki</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan"
-                                required>
+                            <input class="form-check-input" type="radio" id="perempuan" name="jenis_kelamin"
+                                value="Perempuan" required>
                             <label class="form-check-label" for="perempuan">Perempuan</label>
                         </div>
                     </div>
@@ -237,31 +242,43 @@
                         <label class="form-label mb-3" for="kehadiran">
                             <h5 class="fw-semibold">Konfirmasi Kehadiran</h5>
                         </label>
-                        <p class="whitespace-pre-line">Tanggal Kegiatan: Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto consequatur a beatae at laborum aperiam consequuntur culpa non aut repellat sit officiis facere, obcaecati nemo voluptates. Ipsa explicabo repellendus molestiae!</p>
+                        <p class="whitespace-pre-line">
+                            # Day 1
+                            📅 Tanggal: Sabtu, 17 Agustus 2024
+                            ⏰ Waktu: 08.00 - 10.00 WIB
+                            # Day 2
+                            📅 Tanggal: Minggu, 18 Agustus 2024
+                            ⏰ Waktu: 08.00 - 12.00 WIB
+
+                        </p>
                         <div class="form-check">
-                            <input class="form-check-input" onclick="konfirmasiKehadiran();" type="radio" id="konfirmasi_hadir_full" name="kehadiran" value="Full Hadir"
-                                required>
-                            <label class="form-check-label" for="konfirmasi_hadir_full">Insya Allah Bisa hadir di kedua hari tersebut</label>
+                            <input class="form-check-input" onclick="konfirmasiKehadiran();" type="radio"
+                                id="konfirmasi_hadir_full" name="kehadiran" value="Full Hadir" required>
+                            <label class="form-check-label" for="konfirmasi_hadir_full">Insya Allah Bisa hadir di kedua
+                                hari tersebut</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" onclick="konfirmasiKehadiran();" type="radio" id="konfirmasi_hadir_17" name="kehadiran" value="Hari Pertama saja"
-                                required>
-                            <label class="form-check-label" for="konfirmasi_hadir_17">Insya Allah hadir, tetapi hanya di tanggal 17</label>
+                            <input class="form-check-input" onclick="konfirmasiKehadiran();" type="radio"
+                                id="konfirmasi_hadir_17" name="kehadiran" value="Hari Pertama saja" required>
+                            <label class="form-check-label" for="konfirmasi_hadir_17">Insya Allah hadir, tetapi hanya di
+                                tanggal 17</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" onclick="konfirmasiKehadiran();" type="radio" id="konfirmasi_hadir_18" name="kehadiran" value="Hari Kedua saja"
-                                required>
-                            <label class="form-check-label" for="konfirmasi_hadir_18">Insya Allah hadir, tetapi hanya di tanggal 18</label>
+                            <input class="form-check-input" onclick="konfirmasiKehadiran();" type="radio"
+                                id="konfirmasi_hadir_18" name="kehadiran" value="Hari Kedua saja" required>
+                            <label class="form-check-label" for="konfirmasi_hadir_18">Insya Allah hadir, tetapi hanya di
+                                tanggal 18</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" onclick="konfirmasiKehadiran();" type="radio" id="konfirmasi_izin" name="kehadiran" value="Full Izin"
-                                required>
-                            <label class="form-check-label" for="konfirmasi_izin">Afwan belum bisa hadir sama sekali</label>
+                            <input class="form-check-input" onclick="konfirmasiKehadiran();" type="radio"
+                                id="konfirmasi_izin" name="kehadiran" value="Full Izin" required>
+                            <label class="form-check-label" for="konfirmasi_izin">Afwan belum bisa hadir sama
+                                sekali</label>
                         </div>
                     </div>
                 </div>
 
-                
+
                 <div class="card mb-3 p-sm-3 bg-paper" id="card-perizinan">
                     <div class="card-body">
                         <label class="form-label mb-1" for="perizinan_peserta">
@@ -275,7 +292,7 @@
                             aria-describedby="Masukan data dengan benar">
                     </div>
                 </div>
-                
+
                 <input type="hidden" id="latitude" name="latitude">
                 <input type="hidden" id="longitude" name="longitude">
                 <div class="card mb-3 p-sm-3 bg-paper">
@@ -325,7 +342,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-        <script src="./INFONIM.js"></script>
+    <script src="./INFONIM.js"></script>
     <script>
         console.log(INFONIM)
         const deadline = new Date("2024-08-16T22:20:00+07:00");
@@ -459,10 +476,10 @@
         `
         }
         function tutupWindow() {
-            try{
-                
-                return  window.close();
-            } catch(e){
+            try {
+
+                return window.close();
+            } catch (e) {
                 alert("Maaf, ada  kesalahan saat menutup window\n" + e.message);
             }
         }
@@ -528,12 +545,12 @@
         }
         const nimInput = document.getElementById('nim');
         nimInput.addEventListener('input', (event) => {
-            if(nimInput.value.length == 10){
-                const nim = INFONIM.find(info => info["NIM LAMA"] === nimInput.value.substring(0,4));
+            if (nimInput.value.length == 10) {
+                const nim = INFONIM.find(info => info["NIM LAMA"] === nimInput.value.substring(0, 4));
                 if (nim) {
                     document.getElementById('jurusan').value = nim.JURUSAN;
                     document.getElementById('fakultas-' + nim.FAKULTAS).checked = true;
-                    document.getElementById('angkatan').value ="20" + nimInput.value.substring(4, 6);
+                    document.getElementById('angkatan').value = "20" + nimInput.value.substring(4, 6);
                 } else {
                     document.getElementById('jurusan').value = '';
                     document.getElementById('fakultas-FIF').checked = false;
@@ -545,12 +562,12 @@
                     document.getElementById('fakultas-FIT').checked = false;
                 }
             }
-            else if(nimInput.value.length == 12){
-                const nim = INFONIM.find(info => info["NIM BARU"] === nimInput.value.substring(0,5));
+            else if (nimInput.value.length == 12) {
+                const nim = INFONIM.find(info => info["NIM BARU"] === nimInput.value.substring(0, 5));
                 if (nim) {
                     document.getElementById('jurusan').value = nim.JURUSAN;
                     document.getElementById('fakultas-' + nim.FAKULTAS).checked = true;
-                    document.getElementById('angkatan').value ="20" + nimInput.value.substring(5, 7);
+                    document.getElementById('angkatan').value = "20" + nimInput.value.substring(5, 7);
                 } else {
                     document.getElementById('jurusan').value = '';
                     document.getElementById('fakultas-FIF').checked = false;
@@ -564,8 +581,8 @@
             }
         });
 
-        function konfirmasiKehadiran(){
-            
+        function konfirmasiKehadiran() {
+
             const konfirmasi_izin = document.getElementById('konfirmasi_izin');
             const konfirmasi_hadir_full = document.getElementById('konfirmasi_hadir_full');
             const konfirmasi_hadir_17 = document.getElementById('konfirmasi_hadir_17');
@@ -573,7 +590,7 @@
             const perizinan_peserta = document.getElementById('perizinan_peserta');
             const card_perizinan = document.getElementById('card-perizinan');
             card_perizinan.style.transition = "all 2s";
-            if(konfirmasi_izin.checked || konfirmasi_hadir_17.checked || konfirmasi_hadir_18.checked){
+            if (konfirmasi_izin.checked || konfirmasi_hadir_17.checked || konfirmasi_hadir_18.checked) {
                 card_perizinan.hidden = false;
                 perizinan_peserta.value = "";
             } else {
@@ -587,17 +604,17 @@
             switch (status) {
                 case "Kader Aktif":
                     document.getElementById('pengisian-nama').textContent = "Nama Panggilan";
-                    
+
                     break;
-                
-            
+
+
                 default:
-                document.getElementById('pengisian-nama').textContent = "Nama Lengkap";
+                    document.getElementById('pengisian-nama').textContent = "Nama Lengkap";
 
                     break;
             }
-            
-            
+
+
         }
 
 
